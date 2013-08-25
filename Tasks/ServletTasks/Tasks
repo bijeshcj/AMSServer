@@ -1,4 +1,4 @@
 Servlet Tasks
 =============
 
-1) create LoginAuthentication.java and then just authenticate if the password is password -- in progress
+1) create LoginAuthentication.java and then just authenticate if admin is admin and the password is password -- done
