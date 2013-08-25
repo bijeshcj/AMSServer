@@ -1,3 +1,4 @@
 1) create login screen for admin only -- in progress
     1) create a LoginPage.html -- in progress
-        * place the textbox for admin name and password
+        * place the textbox for admin name and password -- done
+        * place enter button -- not done
