@@ -1,0 +1,6 @@
+1) create LoginAuthentication.java and then just authenticate if admin is admin and the password is password -- in progress
+       1) find the request device type i.e web ot mobile -- in progress
+           -- create Device class and Gadget enum -- completed
+           -- find the request type using the request http object -- in progress
+       2) if the request type is from mobile then call authenReqFromMobile() -- not started
+           -- else call authenReqFromWeb() -- in progress

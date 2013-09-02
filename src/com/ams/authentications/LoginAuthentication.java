@@ -32,14 +32,24 @@ public class LoginAuthentication extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	private void authenReqFromWeb(HttpServletRequest request, HttpServletResponse response){
+		try{
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">");
 		out.println("<html><head><title>Login Authentication</title></head><body>");
-		
 		if(isValidUser(getAdmin(request.getParameter("admin"), request.getParameter("password"))))
-		 out.println("<p> Successfully logged in buddy!!!! </body></html>");
-		 else
-			 out.println("<p> Invalid user credentials Check your admin name or password </body></html>");
+			 out.println("<p> Successfully logged in buddy!!!! </body></html>");
+			 else
+				 out.println("<p> Invalid user credentials Check your admin name or password </body></html>");
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+	private void authenReqFromMobile(){
+		
 	}
 	
 	private Admin getAdmin(String admin,String password){
@@ -59,6 +69,7 @@ public class LoginAuthentication extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
 	}
 
 }
